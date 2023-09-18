@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bike Life</title>
+
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="cabecalho">
+                <a href="index.html" class="header_logo">
+                    <img src="img/logo.png" alt="BIke Life">
+                </a>
+
+                <nav class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+        
+                <div class="input_busca">
+                    <img src="img/lupa.png" />
+                    <input type="text" placeholder="Digite aqui sua busca..." />
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="contact_page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="localizacao">
+                    <h3>Estamos localizados no seguinte endereço</h3>
+
+                    <p>Rua Padre José Poggel, 506 - Padre Dehon, Lavras - MG, 37203-593</p>
+
+                    <span>Venha nos visitar!</span>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.637588811748!2d-44.9943714!3d-21.2462151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffd85e812dcbf%3A0x9fe3f1dc59da8a28!2sCentro%20Universit%C3%A1rio%20de%20Lavras!5e0!3m2!1spt-BR!2sbr!4v1693599296451!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <a href="tel:99999999999">
+                        <img src="img/telefone.png">
+                        Telefone: (99) 9 9999-9999
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="BIke Life">
+                    </a>
+                </div>
+                
+                <div class="footer_links">
+                    <a href="index.html">Home</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+
+                <div class="footer_sociais">
+                    <a href=""><img src="img/wpp.png" alt=""></a>
+                    <a href=""><img src="img/instagram (1).png" alt=""></a>
+                    <a href=""><img src="img/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2023 - Developed by Gabriel M Marques - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+
+    <script>
+        $(window).scroll(function(){
+            var sticky = $('header'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 50) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
+    </script>
+
+</body>
+
+</html>
